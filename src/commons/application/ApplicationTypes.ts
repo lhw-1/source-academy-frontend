@@ -154,7 +154,8 @@ const variantDisplay: Map<Variant, string> = new Map([
   [Variant.LAZY, 'Lazy'],
   [Variant.GPU, 'GPU'],
   [Variant.NATIVE, 'Native'],
-  [Variant.EXPLICIT_CONTROL, 'Explicit-Control']
+  [Variant.EXPLICIT_CONTROL, 'Explicit-Control'],
+  [Variant.TRACER, 'Tracer']
 ]);
 
 export const fullJSLanguage: SALanguage = {
@@ -215,6 +216,7 @@ const sourceSubLanguages: Array<Pick<SALanguage, 'chapter' | 'variant'>> = [
   { chapter: Chapter.SOURCE_1, variant: Variant.WASM },
   { chapter: Chapter.SOURCE_1, variant: Variant.LAZY },
   { chapter: Chapter.SOURCE_1, variant: Variant.NATIVE },
+  { chapter: Chapter.SOURCE_1, variant: Variant.TRACER },
 
   { chapter: Chapter.SOURCE_2, variant: Variant.DEFAULT },
   { chapter: Chapter.SOURCE_2, variant: Variant.TYPED },
